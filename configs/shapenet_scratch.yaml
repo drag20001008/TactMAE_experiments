@@ -1,0 +1,39 @@
+project_name: octmae_shapenet
+model_name: shapenet
+
+train_dataset_name: shapenet
+eval_dataset_name: shapenet
+train_dataset_url: /nas1/1000_Members/drag1008/TactMAE/train/shapenet_{000000..000208}.tar
+val_dataset_url:   /nas1/1000_Members/drag1008/TactMAE/val/shapenet_{000000..000011}.tar
+test_dataset_url:  /nas1/1000_Members/drag1008/TactMAE/test/shapenet_{000000..000010}.tar
+train_dataset_size: 104016
+val_dataset_size:   48000
+test_dataset_size:  5376
+
+# Training
+optimizer: AdamW
+lr: 0.0005
+weight_decay: 0.01
+max_epochs: 10
+log_every_n_steps: 50
+num_workers: 4
+batch_size: 4
+
+img_height: 480
+img_width: 640
+
+# Model
+num_enc_layers: 3
+num_dec_layers: 3
+grid_size: 40.0
+update_octree: false
+max_lod: 9
+min_lod: 5
+num_heads: 3
+dim_model: 32
+dim_mae: 192
+pos_emb_dim: 21
+resid_dropout: 0.0
+ff_dropout: 0.0
+ff_activation: gelu
+ff_hidden_layer_multiplier: 8

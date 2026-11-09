@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+wandb/
+checkpoints/
+experiments/
+results/
+eval_results/
+slurm/
+demo/
+eval/
+example_scene/
+*.ckpt
+*.pt
+*.tar
+*.npz
+*.log
