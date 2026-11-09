@@ -56,6 +56,8 @@ OctMAE 원본의 Docker 설치(`docker/`)도 그대로 남아 있다.
 
 ShapeNetCore 렌더링과 물체별 촉각 접촉 데이터가 필요하다 (데이터는 포함하지 않음).
 
+촉각 데이터는 [ShapeNet](https://shapenet.org/)에서 ShapeNetCore v2를 다운로드한 뒤, [TouchSDF](https://github.com/maurock/TouchSDF)의 `data_making/extract_touch_charts.py`를 활용하여 생성한다.
+
 ```bash
 # 1. 렌더링한 각 view의 카메라 좌표계로 촉각 점 변환 (view마다 tactile.npz 생성)
 python scripts/precompute_tactile.py \
