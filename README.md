@@ -5,6 +5,12 @@
 
 > 이 레포는 OctMAE 코드를 수정한 것이다. 원본 OctMAE는 CC BY-NC 4.0 라이선스이며, 이 레포도 같은 라이선스를 따른다 ([라이선스](#라이선스)).
 
+| 문서 | 내용 |
+|---|---|
+| [TACTMAE.md](TACTMAE.md) | 왜 필요한지, 모델 구조, 촉각 통합 방식, 손실 함수, 실험 결과, 능동 촉각 탐색 |
+| [DATASET.md](DATASET.md) | 데이터 통계: 카테고리별 물체 수, train/val/test 분할, shard 구성, sample key |
+| README.md (이 문서) | OctMAE 대비 변경 사항, 설치, 데이터 준비, 학습·평가 명령, 라이선스 |
+
 ---
 
 ## OctMAE 대비 변경 사항
